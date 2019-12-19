@@ -1,0 +1,31 @@
+#
+# GitHub Action test
+#
+# Created by Denis Konieiev
+# 
+name: My-GitHubActions-Test
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+
+  first_test_job:
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello World from Testing job"
+   
+        
+  my_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello World from Deploy job"
+   
+    
+
